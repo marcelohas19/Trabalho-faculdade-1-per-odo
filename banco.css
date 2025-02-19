@@ -1,0 +1,136 @@
+/* Reset de estilo */
+body, h1, form, button, div, label, input, table, th, td {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilização geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #444;
+    text-align: center;
+}
+
+/* Formulário */
+form {
+    background: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Labels */
+label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Botões */
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #003d80;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Tabela de resultados */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #858585;
+}
+
+th {
+    background-color: #cbcbcb;
+}
+
+tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}
